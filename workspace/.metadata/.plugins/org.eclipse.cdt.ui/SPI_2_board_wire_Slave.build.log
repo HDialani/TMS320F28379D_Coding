@@ -1,0 +1,8 @@
+
+**** Build of configuration CPU1_RAM for project SPI_2_board_wire_Slave ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'SPI_2_board_wire_Slave.out' is up to date.
+
+**** Build Finished ****

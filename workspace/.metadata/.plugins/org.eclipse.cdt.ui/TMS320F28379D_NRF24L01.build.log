@@ -1,0 +1,138 @@
+
+**** Build of configuration Debug for project TMS320F28379D_NRF24L01 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../F28379dSerial.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/TMS320F28379D_NRF24L01" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F28379dSerial.d_raw"  "../F28379dSerial.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'F28379dSerial.obj' failed
+"../F28379dSerial.c", line 16: fatal error #1965: cannot open source file "F28x_Project.h"
+1 catastrophic error detected in the compilation of "../F28379dSerial.c".
+Compilation terminated.
+gmake: *** [F28379dSerial.obj] Error 1
+Building file: "../F2837xD_Adc.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/TMS320F28379D_NRF24L01" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_Adc.d_raw"  "../F2837xD_Adc.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'F2837xD_Adc.obj' failed
+"../F2837xD_Adc.c", line 46: fatal error #1965: cannot open source file "F2837xD_device.h"
+1 catastrophic error detected in the compilation of "../F2837xD_Adc.c".
+Compilation terminated.
+gmake: *** [F2837xD_Adc.obj] Error 1
+Building file: "../F2837xD_CpuTimers.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/TMS320F28379D_NRF24L01" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_CpuTimers.d_raw"  "../F2837xD_CpuTimers.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'F2837xD_CpuTimers.obj' failed
+"../F2837xD_CpuTimers.c", line 46: fatal error #1965: cannot open source file "F2837xD_device.h"
+1 catastrophic error detected in the compilation of "../F2837xD_CpuTimers.c".
+Compilation terminated.
+gmake: *** [F2837xD_CpuTimers.obj] Error 1
+Building file: "../F2837xD_DefaultISR.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/TMS320F28379D_NRF24L01" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_DefaultISR.d_raw"  "../F2837xD_DefaultISR.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'F2837xD_DefaultISR.obj' failed
+"../F2837xD_DefaultISR.c", line 46: fatal error #1965: cannot open source file "F2837xD_device.h"
+1 catastrophic error detected in the compilation of "../F2837xD_DefaultISR.c".
+Compilation terminated.
+gmake: *** [F2837xD_DefaultISR.obj] Error 1
+Building file: "../F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/TMS320F28379D_NRF24L01" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_CodeStartBranch.d_raw"  "../F2837xD_CodeStartBranch.asm"
+Finished building: "../F2837xD_CodeStartBranch.asm"
+ 
+Building file: "../F2837xD_EPwm.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/TMS320F28379D_NRF24L01" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_EPwm.d_raw"  "../F2837xD_EPwm.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'F2837xD_EPwm.obj' failed
+"../F2837xD_EPwm.c", line 46: fatal error #1965: cannot open source file "F2837xD_device.h"
+1 catastrophic error detected in the compilation of "../F2837xD_EPwm.c".
+Compilation terminated.
+gmake: *** [F2837xD_EPwm.obj] Error 1
+Building file: "../F2837xD_GlobalVariableDefs.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/TMS320F28379D_NRF24L01" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_GlobalVariableDefs.d_raw"  "../F2837xD_GlobalVariableDefs.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'F2837xD_GlobalVariableDefs.obj' failed
+"../F2837xD_GlobalVariableDefs.c", line 43: fatal error #1965: cannot open source file "F2837xD_device.h"
+1 catastrophic error detected in the compilation of "../F2837xD_GlobalVariableDefs.c".
+Compilation terminated.
+gmake: *** [F2837xD_GlobalVariableDefs.obj] Error 1
+Building file: "../F2837xD_Gpio.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/TMS320F28379D_NRF24L01" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_Gpio.d_raw"  "../F2837xD_Gpio.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'F2837xD_Gpio.obj' failed
+"../F2837xD_Gpio.c", line 46: fatal error #1965: cannot open source file "F2837xD_device.h"
+1 catastrophic error detected in the compilation of "../F2837xD_Gpio.c".
+Compilation terminated.
+gmake: *** [F2837xD_Gpio.obj] Error 1
+Building file: "../F2837xD_PieCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/TMS320F28379D_NRF24L01" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_PieCtrl.d_raw"  "../F2837xD_PieCtrl.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'F2837xD_PieCtrl.obj' failed
+"../F2837xD_PieCtrl.c", line 46: fatal error #1965: cannot open source file "F2837xD_device.h"
+1 catastrophic error detected in the compilation of "../F2837xD_PieCtrl.c".
+Compilation terminated.
+gmake: *** [F2837xD_PieCtrl.obj] Error 1
+Building file: "../F2837xD_PieVect.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/TMS320F28379D_NRF24L01" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_PieVect.d_raw"  "../F2837xD_PieVect.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'F2837xD_PieVect.obj' failed
+"../F2837xD_PieVect.c", line 46: fatal error #1965: cannot open source file "F2837xD_device.h"
+1 catastrophic error detected in the compilation of "../F2837xD_PieVect.c".
+Compilation terminated.
+gmake: *** [F2837xD_PieVect.obj] Error 1
+Building file: "../F2837xD_Spi.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/TMS320F28379D_NRF24L01" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_Spi.d_raw"  "../F2837xD_Spi.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'F2837xD_Spi.obj' failed
+"../F2837xD_Spi.c", line 46: fatal error #1965: cannot open source file "F2837xD_device.h"
+1 catastrophic error detected in the compilation of "../F2837xD_Spi.c".
+Compilation terminated.
+gmake: *** [F2837xD_Spi.obj] Error 1
+Building file: "../F2837xD_SysCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/TMS320F28379D_NRF24L01" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_SysCtrl.d_raw"  "../F2837xD_SysCtrl.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'F2837xD_SysCtrl.obj' failed
+"../F2837xD_SysCtrl.c", line 50: fatal error #1965: cannot open source file "F2837xD_device.h"
+1 catastrophic error detected in the compilation of "../F2837xD_SysCtrl.c".
+Compilation terminated.
+gmake: *** [F2837xD_SysCtrl.obj] Error 1
+Building file: "../main.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/TMS320F28379D_NRF24L01" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 5: fatal error #1965: cannot open source file "F28x_Project.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+Building file: "../F2837xD_usDelay.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/TMS320F28379D_NRF24L01" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_usDelay.d_raw"  "../F2837xD_usDelay.asm"
+Finished building: "../F2837xD_usDelay.asm"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

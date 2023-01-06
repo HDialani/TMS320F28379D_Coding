@@ -1,0 +1,23 @@
+
+**** Build of configuration Debug for project Custom_blinky ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/Custom_blinky" --include_path="C:/ti/c2000/C2000Ware_4_02_00_00/device_support/f2837xd/common/include" --include_path="C:/ti/c2000/C2000Ware_4_02_00_00/device_support/f2837xd/headers/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=CPU1 --define=_LAUNCHXL_F28379D -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+gmake: *** No rule to make target 'C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/ti/c2000/C2000Ware_4_02_00_00/device_support/f2837xd/common/source/F2837xD_CodeStartBranch.asm', needed by 'F2837xD_CodeStartBranch.obj'.
+gmake: *** No rule to make target 'C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/ti/c2000/C2000Ware_4_02_00_00/device_support/f2837xd/common/source/F2837xD_DefaultISR.c', needed by 'F2837xD_DefaultISR.obj'.
+gmake: *** No rule to make target 'C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/ti/c2000/C2000Ware_4_02_00_00/device_support/f2837xd/headers/source/F2837xD_GlobalVariableDefs.c', needed by 'F2837xD_GlobalVariableDefs.obj'.
+gmake: *** No rule to make target 'C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/ti/c2000/C2000Ware_4_02_00_00/device_support/f2837xd/common/source/F2837xD_Gpio.c', needed by 'F2837xD_Gpio.obj'.
+gmake: *** No rule to make target 'C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/ti/c2000/C2000Ware_4_02_00_00/device_support/f2837xd/common/source/F2837xD_PieCtrl.c', needed by 'F2837xD_PieCtrl.obj'.
+gmake: *** No rule to make target 'C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/ti/c2000/C2000Ware_4_02_00_00/device_support/f2837xd/common/source/F2837xD_PieVect.c', needed by 'F2837xD_PieVect.obj'.
+gmake: *** No rule to make target 'C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/ti/c2000/C2000Ware_4_02_00_00/device_support/f2837xd/common/source/F2837xD_SysCtrl.c', needed by 'F2837xD_SysCtrl.obj'.
+gmake: *** No rule to make target 'C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/ti/c2000/C2000Ware_4_02_00_00/device_support/f2837xd/common/source/F2837xD_usDelay.asm', needed by 'F2837xD_usDelay.obj'.
+gmake: *** No rule to make target 'C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/ti/c2000/C2000Ware_4_02_00_00/device_support/f2837xd/headers/cmd/F2837xD_Headers_nonBIOS_cpu1.cmd', needed by 'all'.
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

@@ -1,0 +1,88 @@
+
+/****************************************************************************************************
+ * @source:  https://mevihub.com/how-to-interface-spi-communication-using-tms320/
+ * @brief:   TMS320F28379D
+ * @author:  Hitesh Dialani
+ * @date:    Dec-12-2022
+ * @version: 1.0
+ ****************************************************************************************************
+ ****************************************************************************************************
+ */
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <math.h>
+#include "F28x_Project.h"
+#include "F2837xD_device.h"
+#include "F2837xD_Examples.h"
+
+#include "device.h"
+#include "driverlib.h"
+
+
+void SPI_GPIO_Init();
+void spi_init();
+void spi_TX(Uint16 a);
+
+uint16_t sdata =1;
+
+void main(void)
+{
+
+
+    Device_init();
+    Device_initGPIO();
+
+    DINT;
+    SPI_GPIO_Init();
+    spi_init();
+
+    while(1)
+    {
+
+        spi_TX(sdata);
+        DEVICE_DELAY_US(100000);
+        sdata++;
+    }
+
+
+
+}
+
+
+
+void SPI_GPIO_Init()
+{
+
+          EALLOW;
+          GPIO_setPinConfig(GPIO_58_SPISIMOA);
+          GPIO_setPinConfig(GPIO_59_SPISOMIA);
+          GPIO_setPinConfig(GPIO_60_SPICLKA);
+          GPIO_setPinConfig(GPIO_61_SPISTEA);
+          EDIS;
+
+}
+
+
+
+
+void spi_init()
+{
+
+
+          SPI_disableModule(SPIA_BASE);
+          SPI_setConfig(SPIA_BASE, DEVICE_LSPCLK_FREQ, SPI_PROT_POL0PHA1,
+                        SPI_MODE_MASTER, 500000,     16);
+          SPI_disableFIFO(SPIA_BASE);
+          SPI_enableLoopback(SPIA_BASE);
+          SPI_setEmulationMode(SPIA_BASE, SPI_EMULATION_STOP_MIDWAY);
+          SPI_enableModule(SPIA_BASE);
+}
+
+
+
+void spi_TX(Uint16 a)
+{
+    SpiaRegs.SPITXBUF = a;
+}

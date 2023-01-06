@@ -1,0 +1,8 @@
+
+**** Build of configuration CPU1_RAM for project LAUNCHXL-F28379D_Spi_Digital_Loop_Back_V1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'LAUNCHXL-F28379D_Spi_Digital_Loop_Back_V1.out' is up to date.
+
+**** Build Finished ****

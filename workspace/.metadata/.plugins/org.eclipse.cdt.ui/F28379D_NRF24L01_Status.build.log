@@ -1,0 +1,18 @@
+
+**** Build of configuration CPU1_RAM for project F28379D_NRF24L01_Status ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../F28379D_NRF24L01_Status_main.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/F28379D_NRF24L01_Status" --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/C2000Ware_4_01_00_00/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/C2000Ware_4_01_00_00/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/workspace/F28379D_NRF24L01_Status/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/C2000Ware_4_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/C2000Ware_4_01_00_00/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F28379D_NRF24L01_Status_main.d_raw"  "../F28379D_NRF24L01_Status_main.c"
+Finished building: "../F28379D_NRF24L01_Status_main.c"
+ 
+Building target: "F28379D_NRF24L01_Status.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"F28379D_NRF24L01_Status.map" --stack_size=0x800 --warn_sections -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="F28379D_NRF24L01_Status_linkInfo.xml" --rom_model -o "F28379D_NRF24L01_Status.out" "./F28379D_NRF24L01_Status_main.obj" "./F28379dSerial.obj" "./F2837xD_Adc.obj" "./F2837xD_CodeStartBranch.obj" "./F2837xD_CpuTimers.obj" "./F2837xD_DefaultISR.obj" "./F2837xD_EPwm.obj" "./F2837xD_GlobalVariableDefs.obj" "./F2837xD_Gpio.obj" "./F2837xD_PieCtrl.obj" "./F2837xD_PieVect.obj" "./F2837xD_SysCtrl.obj" "./F2837xD_usDelay.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "../F2837xD_Headers_nonBIOS_cpu1.cmd" "C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/C2000Ware_4_01_00_00/libraries/dsp/FPU/c28/lib/c28x_fpu_dsp_library.lib" "C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/C2000Ware_4_01_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "F28379D_NRF24L01_Status.out"
+ 
+
+**** Build Finished ****

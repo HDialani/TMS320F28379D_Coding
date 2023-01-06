@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;F28379D_SPI_Digital_loopback_Simpler/LABstarter_main.c&apos; to &apos;F28379D_SPI_Digital_loopback_Simpler_main.c&apos;" description="Rename resource &apos;LABstarter_main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="LABstarter_main.c" name="F28379D_SPI_Digital_loopback_Simpler_main.c" stamp="1671011223927" updateReferences="true"/>
+</session>

@@ -1,0 +1,8 @@
+
+**** Build of configuration CPU1_FLASH_DEBUG for project blinky_dc_cpu01 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****

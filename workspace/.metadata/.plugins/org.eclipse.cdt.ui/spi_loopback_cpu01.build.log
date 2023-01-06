@@ -1,0 +1,18 @@
+
+**** Build of configuration CPU1_RAM for project spi_loopback_cpu01 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/C2000Ware_4_01_00_00/device_support/f2837xd/examples/cpu1/spi_loopback/cpu01/Example_2837xDSpi_FFDLB.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --cla_support=cla1 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/C2000Ware_4_01_00_00/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/C2000Ware_4_01_00_00/device_support/f2837xd/common/include" -g --define=CPU1 --display_error_number --diag_suppress=10063 --diag_warning=225 --preproc_with_compile --preproc_dependency="Example_2837xDSpi_FFDLB.d_raw"  "C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/C2000Ware_4_01_00_00/device_support/f2837xd/examples/cpu1/spi_loopback/cpu01/Example_2837xDSpi_FFDLB.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'Example_2837xDSpi_FFDLB.obj' failed
+"C:\Users\hites\Desktop\Github_Ideas\Thesis\Thesis\Software\Thesis_CC\C2000Ware_4_01_00_00\device_support\f2837xd\common\include\driverlib.h", line 45: fatal error #1965: cannot open source file "inc/hw_memmap.h"
+1 catastrophic error detected in the compilation of "C:/Users/hites/Desktop/Github_Ideas/Thesis/Thesis/Software/Thesis_CC/C2000Ware_4_01_00_00/device_support/f2837xd/examples/cpu1/spi_loopback/cpu01/Example_2837xDSpi_FFDLB.c".
+Compilation terminated.
+gmake: *** [Example_2837xDSpi_FFDLB.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
