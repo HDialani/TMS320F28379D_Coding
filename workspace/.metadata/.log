@@ -10339,3 +10339,18 @@ org.eclipse.equinox.p2.core.ProvisionException: No repository found at https://s
 
 !ENTRY org.eclipse.equinox.p2.repository 2 0 2023-01-06 14:02:25.930
 !MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2mac/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2023-01-06 23:44:35.912
+!MESSAGE REX Launching REX 4.1 (online)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2023-01-06 23:44:42.726
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2023-01-06 23:50:35.062
+!MESSAGE REX Launching REX 4.1 (online)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2023-01-06 23:50:35.256
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-06 23:55:13.385
+!MESSAGE Indexed 'empty_driverlib_project' (2 sources, 82 headers) in 4,34 sec: 5.657 declarations; 18.143 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0,0084%)
