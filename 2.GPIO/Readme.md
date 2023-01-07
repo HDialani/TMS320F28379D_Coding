@@ -86,39 +86,227 @@ This micro controller has 337 pins, but not all can be used some are POWER and G
 
 # Software
 
-The first step is to enable a GPIO. I will pick GPIO34 as an example
+## Setting up the C.main
 
-
-```C
-    EALLOW;
-    GpioCtrlRegs.GPADIR.bit.GPIO31 = 1;
-    GPIO_SetupPinOptions(34, GPIO_OUTPUT, GPIO_PUSHPULL);
-    GPIO_SetupPinMux(34, GPIO_MUX_CPU2, 0);
-//
-// TODO Add code to allow configuration of GPADIR from CPU02 using IPC
-//
-    EDIS;
-    GpioDataRegs.GPADAT.bit.GPIO31 = 1;// turn off LED
-
-```
+Lets start building up the code step by step. First starting off with an almost blank code. 
 
 ```C
-    // Included Files
-    //
-     #include "driverlib.h"
-     #include "device.h"
-
-    //
-    // Main
-    //
+/*****************************************************************************************************************
+ * @Author:  Hitesh Dialani
+ * @Date:    Dec-14-2022
+ * @Version: 1.0
+ *****************************************************************************************************************
+ *@Details:  
+ *****************************************************************************************************************
+ */
     void main(void)
     {
 
     }
 
-   //
-   // End of File
-   //
 ```
 
+Only code inside of `void main(void){ }` will execute. Like any C code libraries are needed.
 
+```C
+/*****************************************************************************************************************
+ * @Author:  Hitesh Dialani
+ * @Date:    Dec-14-2022
+ * @Version: 1.0
+ *****************************************************************************************************************
+ *@Details: 
+ *****************************************************************************************************************
+ */
+    #include "F28x_Project.h"    
+    #include "device.h"
+    #include "driverlib.h"
+    
+    void main(void)
+    {
+
+    }
+
+```
+
+These new libraries will make setting up the microcontroller much easier. 
+
+Now I haven't explained how to setup the hardware for programming yet. For example when you turn on a computer all you do is press the ON button, but the computer needs to setup a lot of things in the background inorder for you to do anything. I will first give you the code needed inorder to setup the microcontroller then will try to explain why this is needed.
+
+```C
+/*****************************************************************************************************************
+ * @Author:  Hitesh Dialani
+ * @Date:    Dec-14-2022
+ * @Version: 1.0
+ *****************************************************************************************************************
+ *@Details:  
+ *****************************************************************************************************************
+ */
+    #include "F28x_Project.h"    
+    #include "device.h"
+    #include "driverlib.h"
+    
+    void main(void)
+    {
+    InitSysCtrl();       //Initialize System Control
+    DINT;                //Disable CPU interrupts
+    InitPieCtrl();       //Initialize PIE control registers to their default state
+    IER = 0x0000;        //Disable CPU interrupts
+    IFR = 0x0000;        //Clear all CPU flags
+    InitPieVectTable();  //Initialize the PIE vector table
+    EINT;                // Enable Global interrupt INTM
+    ERTM;                // Enable Global realtime interrupt DBGM
+    
+    }
+
+```
+
+I will start with the `InitSysCtrl();` In Code Composer Studio do CTRL+Left Mouse Click to follow a function. When I do that I get  
+
+```C
+void InitSysCtrl(void)
+{
+    //
+    // Disable the watchdog
+    //
+    DisableDog();
+
+#ifdef _FLASH
+    //
+    // Copy time critical code and Flash setup code to RAM. This includes the
+    // following functions: InitFlash()
+    //
+    // The  RamfuncsLoadStart, RamfuncsLoadSize, and RamfuncsRunStart
+    // symbols are created by the linker. Refer to the device .cmd file.
+    //
+    memcpy(&RamfuncsRunStart, &RamfuncsLoadStart, (size_t)&RamfuncsLoadSize);
+
+    //
+    // Call Flash Initialization to setup flash waitstates. This function must
+    // reside in RAM.
+    //
+    InitFlash();
+#endif
+
+    //
+    //      *IMPORTANT*
+    //
+    // The Device_cal function, which copies the ADC & oscillator calibration
+    // values from TI reserved OTP into the appropriate trim registers, occurs
+    // automatically in the Boot ROM. If the boot ROM code is bypassed during
+    // the debug process, the following function MUST be called for the ADC and
+    // oscillators to function according to specification. The clocks to the
+    // ADC MUST be enabled before calling this function.
+    //
+    // See the device data manual and/or the ADC Reference Manual for more
+    // information.
+    //
+#ifdef CPU1
+    EALLOW;
+
+    //
+    // Enable pull-ups on unbonded IOs as soon as possible to reduce power
+    // consumption.
+    //
+    GPIO_EnableUnbondedIOPullups();
+
+    //
+    // Check if the device is trimmed
+    //
+    if((DevCfgRegs.PARTIDL.bit.QUAL == 0x0) &&
+       (AnalogSubsysRegs.ANAREFTRIMA.all == 0x0))
+    {
+        ConfigureTMXAnalogTrim();
+    }
+
+    EDIS;
+
+    //
+    // Initialize the PLL control: SYSPLLMULT and SYSCLKDIVSEL.
+    //
+    // Defined options to be passed as arguments to this function are defined
+    // in F2837xD_Examples.h.
+    //
+    // Note: The internal oscillator CANNOT be used as the PLL source if the
+    // PLLSYSCLK is configured to frequencies above 194 MHz.
+    //
+    //  PLLSYSCLK = (XTAL_OSC) * (IMULT + FMULT) / (PLLSYSCLKDIV)
+    //
+#ifdef _LAUNCHXL_F28379D
+    InitSysPll(XTAL_OSC,IMULT_40,FMULT_0,PLLCLK_BY_2);
+#else
+    InitSysPll(XTAL_OSC, IMULT_20, FMULT_0, PLLCLK_BY_2);
+#endif // _LAUNCHXL_F28379D
+
+#ifndef _FLASH
+    //
+    // Call Device_cal function when run using debugger
+    // This function is called as part of the Boot code. The function is called
+    // in the InitSysCtrl function since during debug time resets, the boot code
+    // will not be executed and the gel script will reinitialize all the
+    // registers and the calibrated values will be lost.
+    //
+    Device_cal();
+#endif
+#endif // CPU1
+
+    //
+    // Turn on all peripherals
+    //
+    InitPeripheralClocks();
+}
+```
+If you do CTRL+Left Mouse Click on `DisableDog();` you get 
+```C
+//
+// DisableDog - This function disables the watchdog timer.
+//
+void DisableDog(void)
+{
+    volatile Uint16 temp;
+
+    //
+    // Grab the clock config first so we don't clobber it
+    //
+    EALLOW;
+    temp = WdRegs.WDCR.all & 0x0007;
+    WdRegs.WDCR.all = 0x0068 | temp;
+    EDIS;
+}
+```
+So as you if you try to follow the software inorder to understand what is happening you become depressed very fast. 
+Thanks to those libraries all you need to write is `InitSysCtrl();` and it does the rest.
+
+
+EXPLANATION STILL MISSING !!!!!!! 
+
+## Setting up GPIO as output
+
+I will write a code to make GPIO 123 HIGH. To show that it works I will connect that pin to an LED. 
+
+```C
+/*****************************************************************************************************************
+ * @Author:  Hitesh Dialani
+ * @Date:    Dec-14-2022
+ * @Version: 1.0
+ *****************************************************************************************************************
+ *@Details: Make GPIO 123 High to train programming microcontroller
+ *****************************************************************************************************************
+ */
+    #include "F28x_Project.h"    
+    #include "device.h"
+    #include "driverlib.h"
+    
+    void main(void)
+    {
+    InitSysCtrl();       //Initialize System Control
+    DINT;                //Disable CPU interrupts
+    InitPieCtrl();       //Initialize PIE control registers to their default state
+    IER = 0x0000;        //Disable CPU interrupts
+    IFR = 0x0000;        //Clear all CPU flags
+    InitPieVectTable();  //Initialize the PIE vector table
+    EINT;                // Enable Global interrupt INTM
+    ERTM;                // Enable Global realtime interrupt DBGM
+    
+    }
+
+```
