@@ -8104,3 +8104,224 @@ Finished building target: "F28379D_NRF24L01_Status.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project Test ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/Test" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "Test.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"Test.map" --stack_size=0x200 --warn_sections -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="Test_linkInfo.xml" --rom_model -o "Test.out" "./main.obj" "../2837x_FLASH_lnk_cpu1.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LABstarter ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_CodeStartBranch.d_raw"  "../F2837xD_CodeStartBranch.asm"
+Finished building: "../F2837xD_CodeStartBranch.asm"
+ 
+Building file: "../F2837xD_CpuTimers.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_CpuTimers.d_raw"  "../F2837xD_CpuTimers.c"
+Finished building: "../F2837xD_CpuTimers.c"
+ 
+Building file: "../F2837xD_Adc.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_Adc.d_raw"  "../F2837xD_Adc.c"
+Finished building: "../F2837xD_Adc.c"
+ 
+Building file: "../F2837xD_PieCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_PieCtrl.d_raw"  "../F2837xD_PieCtrl.c"
+Finished building: "../F2837xD_PieCtrl.c"
+ 
+Building file: "../F2837xD_DefaultISR.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_DefaultISR.d_raw"  "../F2837xD_DefaultISR.c"
+Finished building: "../F2837xD_DefaultISR.c"
+ 
+Building file: "../F2837xD_EPwm.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_EPwm.d_raw"  "../F2837xD_EPwm.c"
+Finished building: "../F2837xD_EPwm.c"
+ 
+Building file: "../F2837xD_Gpio.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_Gpio.d_raw"  "../F2837xD_Gpio.c"
+Finished building: "../F2837xD_Gpio.c"
+ 
+Building file: "../F2837xD_usDelay.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_usDelay.d_raw"  "../F2837xD_usDelay.asm"
+Finished building: "../F2837xD_usDelay.asm"
+ 
+Building file: "../F2837xD_PieVect.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_PieVect.d_raw"  "../F2837xD_PieVect.c"
+Finished building: "../F2837xD_PieVect.c"
+ 
+Building file: "../F28379dSerial.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F28379dSerial.d_raw"  "../F28379dSerial.c"
+Finished building: "../F28379dSerial.c"
+ 
+Building file: "../F2837xD_Spi.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_Spi.d_raw"  "../F2837xD_Spi.c"
+Finished building: "../F2837xD_Spi.c"
+ 
+Building file: "../F2837xD_SysCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_SysCtrl.d_raw"  "../F2837xD_SysCtrl.c"
+"../F2837xD_SysCtrl.c", line 837 (col. 47): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+Finished building: "../F2837xD_SysCtrl.c"
+ 
+Building file: "../LEDPatterns.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="LEDPatterns.d_raw"  "../LEDPatterns.c"
+Finished building: "../LEDPatterns.c"
+ 
+Building file: "../F2837xD_GlobalVariableDefs.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_GlobalVariableDefs.d_raw"  "../F2837xD_GlobalVariableDefs.c"
+Finished building: "../F2837xD_GlobalVariableDefs.c"
+ 
+Building file: "../LABstarter_main.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="LABstarter_main.d_raw"  "../LABstarter_main.c"
+Finished building: "../LABstarter_main.c"
+ 
+Building file: "../device/device.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/LABstarter/device" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="device/device.d_raw" --obj_directory="device"  "../device/device.c"
+Finished building: "../device/device.c"
+ 
+Building target: "LABstarter.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --define=DEBUG --define=_DUAL_HEADERS --define=CPU1 --define=_LAUNCHXL_F28379D --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"LABstarter.map" --stack_size=0x800 --warn_sections -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="LABstarter_linkInfo.xml" --rom_model -o "LABstarter.out" "./F28379dSerial.obj" "./F2837xD_Adc.obj" "./F2837xD_CodeStartBranch.obj" "./F2837xD_CpuTimers.obj" "./F2837xD_DefaultISR.obj" "./F2837xD_EPwm.obj" "./F2837xD_GlobalVariableDefs.obj" "./F2837xD_Gpio.obj" "./F2837xD_PieCtrl.obj" "./F2837xD_PieVect.obj" "./F2837xD_Spi.obj" "./F2837xD_SysCtrl.obj" "./F2837xD_usDelay.obj" "./LABstarter_main.obj" "./LEDPatterns.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "../F2837xD_Headers_nonBIOS_cpu1.cmd" "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/libraries/dsp/FPU/c28/lib/c28x_fpu_dsp_library.lib" "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "LABstarter.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project spi_ex1_loopback ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../spi_ex1_loopback.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1200/ccs/utils/sysconfig_1.13.0/sysconfig_cli.bat" -s "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/.metadata/sdk.json" -d "F2837xD" --script "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/workspace/spi_ex1_loopback/spi_ex1_loopback.syscfg" -o "syscfg" --compiler ccs
+ 
+Usage:
+ cli [-o <dir>] [-s <file>] [-u <string>] [-b <name>] [-d <name>] [-p <name>] [-r <name>] [--treatWarningsAsErrors] <script>
+ cli --help
+ cli --version
+ 
+ example: cli -s meta_data/sdk.json -d MSP432P401R scripts/two_uarts.js
+ example: -s sdk.json -d MSP432P401R -o ./display_cfg sdk/cfgs/display.syscfg
+ 
+ Note that the all arguments other than '--help' and '--version' may also be 
+ specified via the script with an embedded @cliArgs comment directive. 
+ E.g. // @cliArgs -d MSP432P401R
+ 
+ If an argument is embedded in a script and explicitly specified via the CLI
+ then precedence is given to the CLI arguments. Additionally, specifying 
+ "--board" or "--device" on the CLI will override any "--board" and "--device"
+  arguments specified in the script.
+ 
+subdir_rules.mk:16: recipe for target 'build-1188560735' failed
+Invalid argument '-s': File "C:\Users\hites\Desktop\Github_Ideas\Launchpad_C_code\TMS320F28379D_Coding\C2000Ware_4_01_00_00_Modified\.metadata\sdk.json" does not exist
+gmake: *** [build-1188560735] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project spi_loopback_cpu01 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/examples/cpu1/spi_loopback/cpu01/Example_2837xDSpi_FFDLB.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --cla_support=cla1 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" -g --define=CPU1 --display_error_number --diag_suppress=10063 --diag_warning=225 --preproc_with_compile --preproc_dependency="Example_2837xDSpi_FFDLB.d_raw"  "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/examples/cpu1/spi_loopback/cpu01/Example_2837xDSpi_FFDLB.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'Example_2837xDSpi_FFDLB.obj' failed
+"C:\Users\hites\Desktop\Github_Ideas\Launchpad_C_code\TMS320F28379D_Coding\C2000Ware_4_01_00_00_Modified\device_support\f2837xd\common\include\driverlib.h", line 45: fatal error #1965: cannot open source file "inc/hw_memmap.h"
+1 catastrophic error detected in the compilation of "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/examples/cpu1/spi_loopback/cpu01/Example_2837xDSpi_FFDLB.c".
+Compilation terminated.
+gmake: *** [Example_2837xDSpi_FFDLB.obj] Error 1
+Building file: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --cla_support=cla1 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" -g --define=CPU1 --display_error_number --diag_suppress=10063 --diag_warning=225 --preproc_with_compile --preproc_dependency="F2837xD_CodeStartBranch.d_raw"  "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_CodeStartBranch.asm"
+Finished building: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_CodeStartBranch.asm"
+ 
+Building file: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_DefaultISR.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --cla_support=cla1 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" -g --define=CPU1 --display_error_number --diag_suppress=10063 --diag_warning=225 --preproc_with_compile --preproc_dependency="F2837xD_DefaultISR.d_raw"  "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_DefaultISR.c"
+Finished building: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_DefaultISR.c"
+ 
+Building file: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/source/F2837xD_GlobalVariableDefs.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --cla_support=cla1 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" -g --define=CPU1 --display_error_number --diag_suppress=10063 --diag_warning=225 --preproc_with_compile --preproc_dependency="F2837xD_GlobalVariableDefs.d_raw"  "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/source/F2837xD_GlobalVariableDefs.c"
+Finished building: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/source/F2837xD_GlobalVariableDefs.c"
+ 
+Building file: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_Gpio.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --cla_support=cla1 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" -g --define=CPU1 --display_error_number --diag_suppress=10063 --diag_warning=225 --preproc_with_compile --preproc_dependency="F2837xD_Gpio.d_raw"  "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_Gpio.c"
+Finished building: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_Gpio.c"
+ 
+Building file: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_Ipc.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --cla_support=cla1 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" -g --define=CPU1 --display_error_number --diag_suppress=10063 --diag_warning=225 --preproc_with_compile --preproc_dependency="F2837xD_Ipc.d_raw"  "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_Ipc.c"
+Finished building: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_Ipc.c"
+ 
+Building file: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_PieCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --cla_support=cla1 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" -g --define=CPU1 --display_error_number --diag_suppress=10063 --diag_warning=225 --preproc_with_compile --preproc_dependency="F2837xD_PieCtrl.d_raw"  "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_PieCtrl.c"
+Finished building: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_PieCtrl.c"
+ 
+Building file: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_PieVect.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --cla_support=cla1 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" -g --define=CPU1 --display_error_number --diag_suppress=10063 --diag_warning=225 --preproc_with_compile --preproc_dependency="F2837xD_PieVect.d_raw"  "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_PieVect.c"
+Finished building: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_PieVect.c"
+ 
+Building file: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_Spi.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --cla_support=cla1 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" -g --define=CPU1 --display_error_number --diag_suppress=10063 --diag_warning=225 --preproc_with_compile --preproc_dependency="F2837xD_Spi.d_raw"  "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_Spi.c"
+Finished building: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_Spi.c"
+ 
+Building file: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_SysCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --cla_support=cla1 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" -g --define=CPU1 --display_error_number --diag_suppress=10063 --diag_warning=225 --preproc_with_compile --preproc_dependency="F2837xD_SysCtrl.d_raw"  "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_SysCtrl.c"
+"C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_SysCtrl.c", line 837 (col. 47): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+Finished building: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_SysCtrl.c"
+ 
+Building file: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_usDelay.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --cla_support=cla1 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/include" -g --define=CPU1 --display_error_number --diag_suppress=10063 --diag_warning=225 --preproc_with_compile --preproc_dependency="F2837xD_usDelay.d_raw"  "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_usDelay.asm"
+Finished building: "C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/TMS320F28379D_Coding/C2000Ware_4_01_00_00_Modified/device_support/f2837xd/common/source/F2837xD_usDelay.asm"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LABstarter ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'LABstarter.out' is up to date.
+
+**** Build Finished ****

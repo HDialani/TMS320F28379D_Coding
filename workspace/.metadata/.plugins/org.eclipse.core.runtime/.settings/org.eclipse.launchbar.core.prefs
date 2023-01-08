@@ -2,7 +2,7 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
 activeLaunchTarget=null\:---
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:blinky_dc_cpu01
+configDescList=
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:F28379D_NRF24L01_Status/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:F28379D_NRF24L01_Status/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
