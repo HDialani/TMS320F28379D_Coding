@@ -281,7 +281,9 @@ EXPLANATION STILL MISSING !!!!!!!
 
 ## Setting up GPIO as output
 
-I will write a code to make GPIO 123 HIGH. To show that it works I will connect that pin to an LED. 
+I will write a code to make GPIO 25 HIGH. To show that it works I will connect that pin to an LED.  The setup is shown below
+
+First the general C code with all the setting up and enabling set.
 
 ```C
 /*****************************************************************************************************************
@@ -289,7 +291,7 @@ I will write a code to make GPIO 123 HIGH. To show that it works I will connect 
  * @Date:    Dec-14-2022
  * @Version: 1.0
  *****************************************************************************************************************
- *@Details: Make GPIO 123 High to train programming microcontroller
+ *@Details: Make GPIO 25 High to train programming microcontroller
  *****************************************************************************************************************
  */
     #include "F28x_Project.h"    
@@ -310,3 +312,71 @@ I will write a code to make GPIO 123 HIGH. To show that it works I will connect 
     }
 
 ```
+
+There are 2 things I need to do. First I need to setup GPIO 25 to be an output and. Second thing is I need to make the GPIO HIGH. 
+I will first give the code then I will explain. 
+
+```C
+/*****************************************************************************************************************
+ * @Author:  Hitesh Dialani
+ * @Date:    Dec-14-2022
+ * @Version: 1.0
+ *****************************************************************************************************************
+ *@Details: Make GPIO 25 High to train programming microcontroller
+ *****************************************************************************************************************
+ */
+
+#include "F28x_Project.h"     // Device Header File and Examples Include File
+#include "device.h"
+#include "driverlib.h"
+
+void main(void){
+    InitSysCtrl();                       //Initialize System Control
+    DINT;                                //Disable CPU interrupts
+    InitPieCtrl();                       //Initialize PIE control registers to their default state
+    IER = 0x0000;                        //Disable CPU interrupts
+    IFR = 0x0000;                        //Clear all CPU flags
+    InitPieVectTable();                  //Initialize the PIE vector table
+    EINT;                                // Enable Global interrupt INTM
+    ERTM;                                // Enable Global realtime interrupt DBGM
+
+
+    // Setting up the hardware
+    EALLOW;
+
+    GpioCtrlRegs.GPAGMUX2.bit.GPIO25=0;  // Setup as GPIO
+    GpioCtrlRegs.GPAODR.bit.GPIO25=0;    // Push-Pull
+    GpioCtrlRegs.GPADIR.bit.GPIO25=0;    // Output
+
+    EDIS;
+
+    // Register value
+    GpioDataRegs.GPADAT.bit.GPIO25=1; //Initially ON
+
+   // Idle loop
+    while(1)
+   {
+
+   }
+}
+
+```
+
+As you can see from the picture below it works.
+
+//
+
+Everything between `EALLOW;` and `EDIS;` is for setting up that specific pin to be an GPIO output. The `GpioCtrlRegs`sets the required muxing. The `GpioDataRegs` sets the output value of the register. Once the specific pin is set as an GPIO there are 4 commands that can effect the output value of that pin. They are shown below with an explanation as to what they do.
+
+<div align="center">
+
+| Register   |For OUTPUT  |
+| ------------- |:-------------:|
+| GP?DAT    | GPXDAT.bit.GPIO? = 1. Sets output HIGH. <br />GPXDAT.bit.GPIO? = 0. Sets output LOW|
+| GP?SET    | GPXSET.bit.GPIO? = 1. Sets output HIGH. <br />GPXSET.bit.GPIO? = 0. Does nothing|
+| GP?CLEAR  | GPXCLEAR.bit.GPIO? = 1. Sets output LOW.<br />GPXCLEAR.bit.GPIO? = 0. Does nothing|
+| GP?TOGGLE    | GPXTOGGLE.bit.GPIO? = 1. Changes the to its inverse. <br />GPXSET.bit.GPIO? = 0. Does nothing|
+
+</div>
+
+
