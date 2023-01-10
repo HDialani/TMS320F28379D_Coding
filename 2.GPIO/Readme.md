@@ -273,7 +273,7 @@ void DisableDog(void)
     EDIS;
 }
 ```
-So as you if you try to follow the software inorder to understand what is happening you become depressed very fast. 
+So if you try to follow the software inorder to understand what is happening you become depressed very fast. 
 Thanks to those libraries all you need to write is `InitSysCtrl();` and it does the rest.
 
 
