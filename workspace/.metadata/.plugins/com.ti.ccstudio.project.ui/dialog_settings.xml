@@ -6,7 +6,7 @@
 		<item key="CCS.VIEW_ADVANCED" value="true"/>
 	</section>
 	<section name="com.ti.ccstudio.project.ui.internal.wizards.importexport.ProjectImportPage">
-		<item key="CCS.BROWSE_DIRS_FILTER" value="C:\Users\hites\Desktop\Github_Ideas\Launchpad_C_code\TMS320F28379D_Coding\C2000Ware_4_01_00_00_Modified\device_support\f2837xd\examples\cpu1\spi_loopback"/>
+		<item key="CCS.BROWSE_DIRS_FILTER" value="C:\Users\hites\Desktop\Github_Ideas\Launchpad_C_code\TMS320F28379D_Coding\C2000Ware_4_01_00_00_Modified\device_support\f2837xd\examples\cpu1\LABstarter\cpu01\ccs"/>
 		<item key="CCS.COPY_INTO_WORKSPACE" value="true"/>
 		<item key="CCS.IMPORT_REFERENCED_PROJECTS" value="true"/>
 		<item key="CCS.IMPORT_FROM_ARCHIVE" value="false"/>

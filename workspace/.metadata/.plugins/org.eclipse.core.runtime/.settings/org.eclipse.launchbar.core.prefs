@@ -2,10 +2,13 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
 activeLaunchTarget=null\:---
-configDescList=
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:GPIO_Output1,org.eclipse.launchbar.core.descriptorType.default\:GPIO_Output2
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:F28379D_NRF24L01_Status/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:F28379D_NRF24L01_Status/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:GPIO_Output1/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:GPIO_Output1/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:GPIO_Output2/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:LABstarter/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:LABstarter/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:LAUNCHXL-F28379D_Spi_Digital_Loop_Back_V1/activeLaunchMode=run

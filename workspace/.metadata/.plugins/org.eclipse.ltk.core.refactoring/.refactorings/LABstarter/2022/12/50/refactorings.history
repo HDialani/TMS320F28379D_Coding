@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;LABstarter/nRF24L01_defs&apos; to &apos;nRF24L01_defs.h&apos;" description="Rename resource &apos;nRF24L01_defs&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="nRF24L01_defs" name="nRF24L01_defs.h" stamp="1671017851890" updateReferences="true"/>
-</session>
