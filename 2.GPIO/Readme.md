@@ -351,7 +351,7 @@ void main(void){
     EDIS;
 
     // Register value
-    GpioDataRegs.GPADAT.bit.GPIO25=1; //Initially ON
+    GpioDataRegs.GPASET.bit.GPIO25=1; //Initially ON
 
    // Idle loop
     while(1)
@@ -427,3 +427,15 @@ void main(void){
 }
 
 ```
+
+The setup is as followed 
+
+<img src= "Images/Result/GPIO25_setup.jpg" width=450 >
+
+Results 
+
+
+| GPIO_writePin(25, 0);   | GPIO_writePin(25, 1);    | 
+| ------------- |:-------------:| 
+| GpioDataRegs.GPACLEAR.bit.GPIO25=1;    |GpioDataRegs.GPASET.bit.GPIO25=1;           | 
+|<img src= "Images/Result/GPIO25_OFF.jpeg" width=400>    |  <img src= "Images/Result/GPIO25_ON.jpeg" width=425 >|             | 
