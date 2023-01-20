@@ -9615,3 +9615,146 @@ Finished building target: "Lab1_cpu01.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Labs/Lab1/cpu01" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_common/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --advice:performance=all --define=CPU1 --define=_LAUNCHXL_F28379D -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_CodeStartBranch.d_raw"  "../F2837xD_CodeStartBranch.asm"
+Finished building: "../F2837xD_CodeStartBranch.asm"
+ 
+Building file: "../F2837xD_PieCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Labs/Lab1/cpu01" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_common/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --advice:performance=all --define=CPU1 --define=_LAUNCHXL_F28379D -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_PieCtrl.d_raw"  "../F2837xD_PieCtrl.c"
+Finished building: "../F2837xD_PieCtrl.c"
+ 
+Building file: "../F2837xD_DefaultISR.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Labs/Lab1/cpu01" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_common/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --advice:performance=all --define=CPU1 --define=_LAUNCHXL_F28379D -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_DefaultISR.d_raw"  "../F2837xD_DefaultISR.c"
+Finished building: "../F2837xD_DefaultISR.c"
+ 
+Building file: "../F2837xD_usDelay.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Labs/Lab1/cpu01" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_common/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --advice:performance=all --define=CPU1 --define=_LAUNCHXL_F28379D -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_usDelay.d_raw"  "../F2837xD_usDelay.asm"
+Finished building: "../F2837xD_usDelay.asm"
+ 
+Building file: "../F2837xD_PieVect.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Labs/Lab1/cpu01" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_common/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --advice:performance=all --define=CPU1 --define=_LAUNCHXL_F28379D -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_PieVect.d_raw"  "../F2837xD_PieVect.c"
+Finished building: "../F2837xD_PieVect.c"
+ 
+Building file: "../F2837xD_Gpio.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Labs/Lab1/cpu01" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_common/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --advice:performance=all --define=CPU1 --define=_LAUNCHXL_F28379D -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_Gpio.d_raw"  "../F2837xD_Gpio.c"
+Finished building: "../F2837xD_Gpio.c"
+ 
+Building file: "../F2837xD_SysCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Labs/Lab1/cpu01" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_common/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --advice:performance=all --define=CPU1 --define=_LAUNCHXL_F28379D -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_SysCtrl.d_raw"  "../F2837xD_SysCtrl.c"
+Finished building: "../F2837xD_SysCtrl.c"
+ 
+Building file: "../Lab1_cpu01.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Labs/Lab1/cpu01" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_common/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --advice:performance=all --define=CPU1 --define=_LAUNCHXL_F28379D -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="Lab1_cpu01.d_raw"  "../Lab1_cpu01.c"
+Finished building: "../Lab1_cpu01.c"
+ 
+Building file: "../F2837xD_GlobalVariableDefs.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Labs/Lab1/cpu01" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_common/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --advice:performance=all --define=CPU1 --define=_LAUNCHXL_F28379D -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_GlobalVariableDefs.d_raw"  "../F2837xD_GlobalVariableDefs.c"
+Finished building: "../F2837xD_GlobalVariableDefs.c"
+ 
+Building target: "test.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --advice:performance=all --define=CPU1 --define=_LAUNCHXL_F28379D -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"test.map" --stack_size=0x200 --warn_sections -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./F2837xD_CodeStartBranch.obj" "./F2837xD_DefaultISR.obj" "./F2837xD_GlobalVariableDefs.obj" "./F2837xD_Gpio.obj" "./F2837xD_PieCtrl.obj" "./F2837xD_PieVect.obj" "./F2837xD_SysCtrl.obj" "./F2837xD_usDelay.obj" "./Lab1_cpu01.obj" "../2837xD_RAM_lnk_cpu1.cmd" "../F2837xD_Headers_nonBIOS_cpu1.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'test.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../Lab1_cpu01.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Labs/Lab1/cpu01" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_common/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --advice:performance=all --define=CPU1 --define=_LAUNCHXL_F28379D -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="Lab1_cpu01.d_raw"  "../Lab1_cpu01.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'Lab1_cpu01.obj' failed
+"../Lab1_cpu01.c", line 11: fatal error #1965: cannot open source file "device.h"
+1 catastrophic error detected in the compilation of "../Lab1_cpu01.c".
+Compilation terminated.
+gmake: *** [Lab1_cpu01.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../Lab1_cpu01.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Labs/Lab1/cpu01" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_common/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --advice:performance=all --define=CPU1 --define=_LAUNCHXL_F28379D -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="Lab1_cpu01.d_raw"  "../Lab1_cpu01.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'Lab1_cpu01.obj' failed
+"../Lab1_cpu01.c", line 28: warning #225-D: function "GPIO_setPinConfig" declared implicitly
+"../Lab1_cpu01.c", line 28: error #20: identifier "GPIO_25_GPIO25" is undefined
+"../Lab1_cpu01.c", line 29: warning #225-D: function "GPIO_setDirectionMode" declared implicitly
+"../Lab1_cpu01.c", line 29: error #20: identifier "GPIO_DIR_MODE_OUT" is undefined
+"../Lab1_cpu01.c", line 30: warning #225-D: function "GPIO_setMasterCore" declared implicitly
+"../Lab1_cpu01.c", line 30: error #20: identifier "GPIO_CORE_CPU1" is undefined
+"../Lab1_cpu01.c", line 31: warning #225-D: function "GPIO_setPadConfig" declared implicitly
+"../Lab1_cpu01.c", line 31: error #20: identifier "GPIO_PIN_TYPE_STD" is undefined
+"../Lab1_cpu01.c", line 35: warning #225-D: function "GPIO_writePin" declared implicitly
+4 errors detected in the compilation of "../Lab1_cpu01.c".
+gmake: *** [Lab1_cpu01.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../Lab1_cpu01.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Labs/Lab1/cpu01" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_headers/include" --include_path="C:/Users/hites/Desktop/Github_Ideas/Launchpad_C_code/F2837xD/Device_support/F2837xD_common/include" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --advice:performance=all --define=CPU1 --define=_LAUNCHXL_F28379D -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="Lab1_cpu01.d_raw"  "../Lab1_cpu01.c"
+Finished building: "../Lab1_cpu01.c"
+ 
+Building target: "test.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --advice:performance=all --define=CPU1 --define=_LAUNCHXL_F28379D -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"test.map" --stack_size=0x200 --warn_sections -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./F2837xD_CodeStartBranch.obj" "./F2837xD_DefaultISR.obj" "./F2837xD_GlobalVariableDefs.obj" "./F2837xD_Gpio.obj" "./F2837xD_PieCtrl.obj" "./F2837xD_PieVect.obj" "./F2837xD_SysCtrl.obj" "./F2837xD_usDelay.obj" "./Lab1_cpu01.obj" "../2837xD_RAM_lnk_cpu1.cmd" "../F2837xD_Headers_nonBIOS_cpu1.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'test.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'test.out' is up to date.
+
+**** Build Finished ****

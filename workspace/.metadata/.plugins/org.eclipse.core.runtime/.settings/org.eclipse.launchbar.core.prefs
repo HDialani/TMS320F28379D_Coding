@@ -2,7 +2,7 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
 activeLaunchTarget=null\:---
-configDescList=
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:test
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:F28379D_NRF24L01_Status/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:F28379D_NRF24L01_Status/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
@@ -23,3 +23,5 @@ org.eclipse.launchbar.core.descriptorType.default\:blinky_dc_cpu01/activeLaunchM
 org.eclipse.launchbar.core.descriptorType.default\:blinky_dc_cpu01/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:spi_loopback_cpu01/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:spi_loopback_cpu01/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:test/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:test/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
