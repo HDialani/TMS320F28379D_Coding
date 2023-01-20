@@ -8,8 +8,7 @@
  */
 
 #include "F28x_Project.h"     // Device Header File and Examples Include File
-#include "device.h"
-#include "driverlib.h"
+
 
 void main(void){
     InitSysCtrl();                       //Initialize System Control
